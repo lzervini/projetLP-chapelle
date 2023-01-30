@@ -16,6 +16,11 @@ Tags: simple, facile
 
 html{
     color : $textColor;
+    font-family: $mainFont;
+}
+
+body{
+    margin: 0;
 }
 
 a{
@@ -28,6 +33,11 @@ p {
 
 h1,h2,h3{
     font-family: $titleFont;
+    text-transform: uppercase;
+}
+
+li{
+    list-style: none;
 }
 
 

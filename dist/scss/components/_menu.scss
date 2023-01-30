@@ -1,0 +1,83 @@
+.header{
+    background-color: #E6EBE0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height : 75px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 24px;
+    transition: all .4s ease;
+}
+
+.style-svg{
+    width: 180px;
+}
+
+.menu__list{
+    margin-left: 10vw;
+    list-style: none;
+}
+
+   #menu-principal {
+    display: flex;
+    gap: 20px;
+   }
+
+   #menu-principal>.menu-item>a{
+    padding : 24px 12px 24px 12px;
+        color: $textColor;
+    &:hover{
+        color : #4D9179;
+    }
+    &:visited{
+        color: $textColor;
+        &:hover{
+            color: #4D9179;
+        }
+    }
+    &:active{
+        background-color: $textColor;
+        height: fit-content;
+    }
+}
+
+//Menu déroulant
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    list-style: none;
+    top: 35px;
+    padding : 20px;
+    width: 250px;
+}
+
+.menu-item-has-children{
+    position: relative;
+    &:hover .sub-menu{
+        display: block;
+    }
+}
+
+.sub-menu>li>a{
+        color: $textColor;
+    &:hover{
+        color : #4D9179;
+    }
+    &:visited{
+        color: $textColor;
+        &:hover{
+            color: $mainColor;
+        }
+    }
+    &:active{
+        background-color: $textColor;
+        height: fit-content;
+    }
+}
+
+.menu-item{
+    padding :10px 0;
+}

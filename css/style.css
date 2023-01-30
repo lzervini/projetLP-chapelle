@@ -10,8 +10,95 @@ Tags: simple, facile
 */
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+.header {
+  background-color: #E6EBE0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 75px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px 24px;
+  transition: all 0.4s ease;
+}
+
+.style-svg {
+  width: 180px;
+}
+
+.menu__list {
+  margin-left: 10vw;
+  list-style: none;
+}
+
+#menu-principal {
+  display: flex;
+  gap: 20px;
+}
+
+#menu-principal > .menu-item > a {
+  padding: 24px 12px 24px 12px;
+  color: #555358;
+}
+#menu-principal > .menu-item > a:hover {
+  color: #4D9179;
+}
+#menu-principal > .menu-item > a:visited {
+  color: #555358;
+}
+#menu-principal > .menu-item > a:visited:hover {
+  color: #4D9179;
+}
+#menu-principal > .menu-item > a:active {
+  background-color: #555358;
+  height: fit-content;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  list-style: none;
+  top: 35px;
+  padding: 20px;
+  width: 250px;
+}
+
+.menu-item-has-children {
+  position: relative;
+}
+.menu-item-has-children:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu > li > a {
+  color: #555358;
+}
+.sub-menu > li > a:hover {
+  color: #4D9179;
+}
+.sub-menu > li > a:visited {
+  color: #555358;
+}
+.sub-menu > li > a:visited:hover {
+  color: #9BC1BC;
+}
+.sub-menu > li > a:active {
+  background-color: #555358;
+  height: fit-content;
+}
+
+.menu-item {
+  padding: 10px 0;
+}
+
 html {
   color: #555358;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+body {
+  margin: 0;
 }
 
 a {
@@ -24,4 +111,9 @@ p {
 
 h1, h2, h3 {
   font-family: "Alata", sans-serif;
+  text-transform: uppercase;
+}
+
+li {
+  list-style: none;
 }/*# sourceMappingURL=style.css.map */

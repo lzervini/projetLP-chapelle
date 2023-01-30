@@ -1,5 +1,7 @@
 <?php
-	wp_enqueue_style( 
+	
+  function test_scripts_styles() {
+  wp_enqueue_style( 
     'lachapelle-style',
      get_template_directory_uri() . '/css/style.css',
     array(),
@@ -7,9 +9,14 @@
   );
 
   wp_enqueue_script(
-     'lachapelle-scripts', get_template_directory_uri() . '/dist/js/scripts.js', array(), '', true );
- 
+    'lachapellescripts',
+     get_template_directory_uri() . '/dist/js/scripts.js',
+     array(), '1.0' );
 
+  }
+
+  add_action('wp_enqueue_scripts', 'test_scripts_styles');
+ 
   function lachapelle_setup() {
     //image msie en avant
     add_theme_support( 'post-thumbnails' );
