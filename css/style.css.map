@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../dist/scss/style.scss"],"names":[],"mappings":";AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["../dist/scss/style.scss","../dist/scss/foundations/_variables.scss"],"names":[],"mappings":";AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;ACKQ;AACA;ADUR;EACI,OCdS;;;ADiBb;EACI;;;AAGJ;EACI,aCjBO;;;ADoBX;EACI,aCpBQ","file":"style.css"}

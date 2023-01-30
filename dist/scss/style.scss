@@ -7,3 +7,27 @@ Description:  Mise en situation professionnelle - LPW Design
 Version: 0.1
 Tags: simple, facile
 */
+//Foundation
+@import "./foundations/variables";
+
+//Components
+@import "./components/menu";
+
+
+html{
+    color : $textColor;
+}
+
+a{
+    text-decoration: none;
+  }
+
+p {
+    font-family: $mainFont;
+}
+
+h1,h2,h3{
+    font-family: $titleFont;
+}
+
+

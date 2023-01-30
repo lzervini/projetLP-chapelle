@@ -7,4 +7,21 @@ Author URI: /
 Description:  Mise en situation professionnelle - LPW Design
 Version: 0.1
 Tags: simple, facile
-*//*# sourceMappingURL=style.css.map */
+*/
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+html {
+  color: #555358;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Alata", sans-serif;
+}/*# sourceMappingURL=style.css.map */
