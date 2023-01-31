@@ -1,0 +1,20 @@
+
+
+div.tribe-common-g-row {
+    border: 2px solid $mainColor;
+    padding: 10px;
+  }
+  
+  div.tribe-common-g-row > div > time:nth-child(1) > span:nth-child(1) {
+    font-size: 25px;
+    color: $elementsColor;
+  }
+  
+  div.tribe-common-g-row > div > time:nth-child(1) > span:nth-child(2) {
+    font-size: 50px;
+  }
+  
+  div.tribe-common-g-row > div > time:nth-child(1) > span:nth-child(3) {
+    font-size: 25px;
+  }
+  
