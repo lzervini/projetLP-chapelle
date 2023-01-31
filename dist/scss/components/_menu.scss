@@ -9,6 +9,10 @@
     transition: all .4s ease;
 }
 
+#mainNav{
+    z-index:2;
+}
+
 .style-svg{
     width: 180px;
 }
@@ -36,7 +40,7 @@
         }
     }
     &:active{
-        background-color: $textColor;
+    
         height: fit-content;
     }
 }
@@ -73,7 +77,7 @@
         }
     }
     &:active{
-        background-color: $textColor;
+
         height: fit-content;
     }
 }
