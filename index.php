@@ -1,4 +1,13 @@
 <?php get_header(); ?>
+<?php
+ 	if ( have_posts() ) :
+ 		while ( have_posts() ) : 
+			the_post();?>
+			<?php the_content('');
+
+		 endwhile;
+ 	endif;?>
+		
 
 <!-- Page demarche -->
 	<?php if (is_page('Liste des démarches')){
@@ -58,5 +67,48 @@ endif;
 		endwhile;
 	endif;
 	}?>
+
+<!-- Page Etat civil -->
+<?php if (is_page('Election')){
+		?>
+		<h1> <?php the_title(); ?></h1>
+		<?php
+	   $argsTest = array(
+		 'post_type' => 'election',
+		 'posts_per_page' => '3',
+	   );
+	   ?>
+	   <div class="card_sujets">
+		   <?php query_posts( $argsTest );
+		 if ( have_posts() ) :
+			while ( have_posts() ) : the_post();?>
+			<div class="cardSeule">
+		<div class="">
+		<?php the_title( '<h4>', '</h4>' );?>
+		<p><?php echo get_the_excerpt(); ?></p>
+			<a class="card-link" href="<?php the_permalink(); ?>"> En savoir plus</a>
+		</div>
+		 </div>
+		 <hr class="littleGreen">
+
+<?php
+		endwhile;
+	endif;
+	}?>
+
+<!-- Page démarche à distance -->
+<?php if (is_page('Démarches à distances')){
+		?>
+		<?php
+ 	if ( have_posts() ) :
+ 		while ( have_posts() ) : 
+			the_post();?>
+			<?php the_content('');
+
+		 endwhile;
+ 	endif;
+		
+} ?>
+</div>
  
  <?php get_footer(); ?>

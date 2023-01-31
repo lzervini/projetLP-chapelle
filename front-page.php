@@ -22,11 +22,11 @@
 			<div>
 
 		<?php 
-		if( have_rows( 'services')): ?>
+		if( have_rows( 'services' ) ): ?>
 			<div class="services">
   		<?php while(have_rows('services')): the_row(); 
 			$img_services = get_sub_field('img_services');
-			$text_services = get_sub_field('text_services');?>
+			$text_services = get_field('text_services');?>
 			<div class="cardService">
   				<img src="<?php echo $img_services['url']; ?>"></img>  
 				<p> <?php echo $text_services; ?></p>
