@@ -5,6 +5,12 @@
 	<?php if (is_page('Liste des démarches')){
 		?>
 		<section class="borderDermarche marginWidth">
+		<div class="breadcrumbs"typeof="BreadcrumbList" vocab="https://schema.org/">
+			<?php if(function_exists('bcn_display'))
+			{
+				bcn_display();
+			}?>
+		</div>
 		<h2> <?php the_title(); ?></h2>
 		<?php
  	if ( have_posts() ) :
@@ -42,26 +48,34 @@
 		<?php
 	   $args = array(
 		 'post_type' => 'urbanisme',
-		 'posts_per_page' => 4,
+		 'posts_per_page' => '',
 	   );
 	   ?>
-	   <div class="card_sujets">
-		   <?php query_posts( $args );
-		 if ( have_posts() ) :
-			while ( have_posts() ) : the_post();?>
-			<div class="cardSeule">
-		<div class="">
-		<?php the_title( '<h4>', '</h4>' );?>
-		<p><?php echo get_the_excerpt(); ?></p>
-			<a class="card-link" href="<?php the_permalink(); ?>"> En savoir plus</a>
+	   <section>
+	   		<div class="marginWidth">
+			   <div class="breadcrumbs"typeof="BreadcrumbList" vocab="https://schema.org/">
+			<?php if(function_exists('bcn_display'))
+			{
+				bcn_display();
+			}?>
 		</div>
-		 </div>
-		 <hr class="littleGreen">
-
-<?php
-		endwhile;
-	endif;
-	} ?>
+				   <?php query_posts( $argsTest );
+				 if ( have_posts() ) :
+					while ( have_posts() ) : the_post();?>
+				<div class="cardSeule">
+					<?php the_title( '<h4>', '</h4>' );?>
+						<p><?php echo get_the_excerpt(); ?></p>
+						<a class="card-link" href="<?php the_permalink(); ?>"> En savoir plus</a>
+						<hr class="littleGreen">
+				</div>
+				<?php
+					endwhile;
+				endif;?>
+			</div>
+		</section>
+	</main>
+		  <?php get_footer(); 
+	  } ?>
 
 <!-- Page Elections -->
 <?php if (is_page('Elections')){
@@ -69,26 +83,34 @@
 		<?php
 	   $argsTest = array(
 		 'post_type' => 'election',
-		 'posts_per_page' => '3',
+		 'posts_per_page' => '',
 	   );
 	   ?>
-	   <div class="card_sujets">
-		   <?php query_posts( $argsTest );
-		 if ( have_posts() ) :
-			while ( have_posts() ) : the_post();?>
-			<div class="cardSeule">
-		<div class="">
-		<?php the_title( '<h4>', '</h4>' );?>
-		<p><?php echo get_the_excerpt(); ?></p>
-			<a class="card-link" href="<?php the_permalink(); ?>"> En savoir plus</a>
+	   <section>
+	   		<div class="marginWidth">
+			   <div class="breadcrumbs"typeof="BreadcrumbList" vocab="https://schema.org/">
+			<?php if(function_exists('bcn_display'))
+			{
+				bcn_display();
+			}?>
 		</div>
-		 </div>
-		 <hr class="littleGreen">
-
-<?php
-		endwhile;
-	endif;
-	}?>
+				   <?php query_posts( $argsTest );
+				 if ( have_posts() ) :
+					while ( have_posts() ) : the_post();?>
+				<div class="cardSeule">
+					<?php the_title( '<h4>', '</h4>' );?>
+						<p><?php echo get_the_excerpt(); ?></p>
+						<a class="card-link" href="<?php the_permalink(); ?>"> En savoir plus</a>
+						<hr class="littleGreen">
+				</div>
+				<?php
+					endwhile;
+				endif;?>
+			</div>
+		</section>
+	</main>
+		  <?php get_footer(); 
+	  } ?>
 
 <!-- Page Etat civil -->
 <?php if (is_page('Etat-civil')){
@@ -96,26 +118,35 @@
 		<?php
 	   $argsTest = array(
 		 'post_type' => 'etat_civil',
-		 'posts_per_page' => '3',
+		 'posts_per_page' => '',
 	   );
 	   ?>
-	   <div class="card_sujets">
-		   <?php query_posts( $argsTest );
-		 if ( have_posts() ) :
-			while ( have_posts() ) : the_post();?>
-			<div class="cardSeule">
-		<div class="">
-		<?php the_title( '<h4>', '</h4>' );?>
-		<p><?php echo get_the_excerpt(); ?></p>
-			<a class="card-link" href="<?php the_permalink(); ?>"> En savoir plus</a>
+	   <section>
+	   		<div class="marginWidth">
+			   <div class="breadcrumbs"typeof="BreadcrumbList" vocab="https://schema.org/">
+			<?php if(function_exists('bcn_display'))
+			{
+				bcn_display();
+			}?>
 		</div>
-		 </div>
-		 <hr class="littleGreen">
+				   <?php query_posts( $argsTest );
+				 if ( have_posts() ) :
+					while ( have_posts() ) : the_post();?>
+				<div class="cardSeule">
+					<?php the_title( '<h4>', '</h4>' );?>
+						<p><?php echo get_the_excerpt(); ?></p>
+						<a class="card-link" href="<?php the_permalink(); ?>"> En savoir plus</a>
+						<hr class="littleGreen">
+				</div>
+				<?php
+					endwhile;
+				endif;?>
+			</div>
+		</section>
+	</main>
+		  <?php get_footer(); 
+	  } ?>
 
-<?php
-		endwhile;
-	endif;
-	}?>
 
 <!-- Page Autorisations -->
 <?php if (is_page('Autorisations')){
@@ -123,26 +154,34 @@
 		<?php
 	   $argsTest = array(
 		 'post_type' => 'declaration',
-		 'posts_per_page' => '3',
+		 'posts_per_page' => '',
 	   );
 	   ?>
-	   <div class="card_sujets">
-		   <?php query_posts( $argsTest );
-		 if ( have_posts() ) :
-			while ( have_posts() ) : the_post();?>
-			<div class="cardSeule">
-		<div class="">
-		<?php the_title( '<h4>', '</h4>' );?>
-		<p><?php echo get_the_excerpt(); ?></p>
-			<a class="card-link" href="<?php the_permalink(); ?>"> En savoir plus</a>
+	   <section>
+	   		<div class="marginWidth">
+			   <div class="breadcrumbs"typeof="BreadcrumbList" vocab="https://schema.org/">
+			<?php if(function_exists('bcn_display'))
+			{
+				bcn_display();
+			}?>
 		</div>
-		 </div>
-		 <hr class="littleGreen">
-
-<?php
-		endwhile;
-	endif;
-	}?>
+				   <?php query_posts( $argsTest );
+				 if ( have_posts() ) :
+					while ( have_posts() ) : the_post();?>
+				<div class="cardSeule">
+					<?php the_title( '<h4>', '</h4>' );?>
+						<p><?php echo get_the_excerpt(); ?></p>
+						<a class="card-link" href="<?php the_permalink(); ?>"> En savoir plus</a>
+						<hr class="littleGreen">
+				</div>
+				<?php
+					endwhile;
+				endif;?>
+			</div>
+		</section>
+	</main>
+		  <?php get_footer(); 
+	  } ?>
 
 <!-- Page Papiers d'identité -->
 <?php if (is_page('Papiers d\'identité')){
@@ -150,32 +189,46 @@
 		<?php
 	   $argsTest = array(
 		 'post_type' => 'papiers_id',
-		 'posts_per_page' => '3',
+		 'posts_per_page' => '',
 	   );
 	   ?>
-	   <div class="card_sujets">
-		   <?php query_posts( $argsTest );
-		 if ( have_posts() ) :
-			while ( have_posts() ) : the_post();?>
-			<div class="cardSeule">
-		<div class="">
-		<?php the_title( '<h4>', '</h4>' );?>
-		<p><?php echo get_the_excerpt(); ?></p>
-			<a class="card-link" href="<?php the_permalink(); ?>"> En savoir plus</a>
+	   <section>
+	   		<div class="marginWidth">
+			   <div class="breadcrumbs"typeof="BreadcrumbList" vocab="https://schema.org/">
+			<?php if(function_exists('bcn_display'))
+			{
+				bcn_display();
+			}?>
 		</div>
-		 </div>
-		 <hr class="littleGreen">
-
-<?php
-		endwhile;
-	endif;
-	}?>
+				   <?php query_posts( $argsTest );
+				 if ( have_posts() ) :
+					while ( have_posts() ) : the_post();?>
+				<div class="cardSeule">
+					<?php the_title( '<h4>', '</h4>' );?>
+						<p><?php echo get_the_excerpt(); ?></p>
+						<a class="card-link" href="<?php the_permalink(); ?>"> En savoir plus</a>
+						<hr class="littleGreen">
+				</div>
+				<?php
+					endwhile;
+				endif;?>
+			</div>
+		</section>
+	</main>
+		  <?php get_footer(); 
+	  } ?>
 
 <!-- Page Démarches à distance -->
 <?php if (is_page('Démarches à distance')){
 		?>
 	<section >
 		<div class="marginWidth">
+		<div class="breadcrumbs"typeof="BreadcrumbList" vocab="https://schema.org/">
+			<?php if(function_exists('bcn_display'))
+			{
+				bcn_display();
+			}?>
+		</div>
 		<h2> <?php the_title(); ?></h2>
 		<?php
  	if ( have_posts() ) :
@@ -195,6 +248,12 @@
 		?>
 	<section >
 		<div class="marginWidth">
+		<div class="breadcrumbs"typeof="BreadcrumbList" vocab="https://schema.org/">
+			<?php if(function_exists('bcn_display'))
+			{
+				bcn_display();
+			}?>
+		</div>
 		<h2> <?php the_title(); ?></h2>
 		<?php
  	if ( have_posts() ) :
@@ -214,6 +273,12 @@
 		?>
 	<section >
 		<div class="marginWidth">
+		<div class="breadcrumbs"typeof="BreadcrumbList" vocab="https://schema.org/">
+			<?php if(function_exists('bcn_display'))
+			{
+				bcn_display();
+			}?>
+		</div>
 		<h2> <?php the_title(); ?></h2>
 		<?php
  	if ( have_posts() ) :
@@ -233,6 +298,12 @@
 		?>
 	<section >
 		<div class="marginWidth">
+		<div class="breadcrumbs"typeof="BreadcrumbList" vocab="https://schema.org/">
+			<?php if(function_exists('bcn_display'))
+			{
+				bcn_display();
+			}?>
+		</div>
 		<h2> <?php the_title(); ?></h2>
 		<?php
  	if ( have_posts() ) :
@@ -252,6 +323,12 @@
 		?>
 	<section >
 		<div class="marginWidth">
+		<div class="breadcrumbs"typeof="BreadcrumbList" vocab="https://schema.org/">
+			<?php if(function_exists('bcn_display'))
+			{
+				bcn_display();
+			}?>
+		</div>
 		<h2> <?php the_title(); ?></h2>
 		<?php
  	if ( have_posts() ) :
@@ -271,6 +348,12 @@
 		?>
 	<section >
 		<div class="marginWidth">
+		<div class="breadcrumbs"typeof="BreadcrumbList" vocab="https://schema.org/">
+			<?php if(function_exists('bcn_display'))
+			{
+				bcn_display();
+			}?>
+		</div>
 		<h2> <?php the_title(); ?></h2>
 		<?php
  	if ( have_posts() ) :
@@ -290,6 +373,37 @@
 		?>
 	<section >
 		<div class="marginWidth">
+		<div class="breadcrumbs"typeof="BreadcrumbList" vocab="https://schema.org/">
+			<?php if(function_exists('bcn_display'))
+			{
+				bcn_display();
+			}?>
+		</div>
+		<h2> <?php the_title(); ?></h2>
+		<?php
+ 	if ( have_posts() ) :
+ 		while ( have_posts() ) : 
+			the_post();?>
+			<?php the_content('');?>
+		</div>
+	</section>
+
+		 <?php endwhile;
+ 	endif;
+		
+} ?>
+
+<!-- Page Histoire -->
+<?php if (is_page('Histoire')){
+		?>
+	<section >
+		<div class="marginWidth">
+		<div class="breadcrumbs"typeof="BreadcrumbList" vocab="https://schema.org/">
+			<?php if(function_exists('bcn_display'))
+			{
+				bcn_display();
+			}?>
+		</div>
 		<h2> <?php the_title(); ?></h2>
 		<?php
  	if ( have_posts() ) :
