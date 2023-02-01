@@ -1,0 +1,60 @@
+.wpcf7-form-control{
+    border : none;
+    border-radius: 10px;
+    height: 45px;
+    width : 50%;
+    margin: 0 auto;
+    background-color: #EDEDED;
+    &:active{
+        border: none;
+    }
+    &:focus{
+        border: none;
+    }
+    &:focus-visible{
+        border: none;
+        border : solid $mainColor 2px;
+    }
+}
+
+form{
+    p>label{
+        text-align: start!important;
+        text-transform:uppercase;
+    }
+}
+
+.wpcf7-text{
+    padding : 0 10px;
+}
+
+.textAlign{
+    text-align: center;
+}
+
+.wpcf7-form-control-wrap>textarea{
+    height: 50%;
+    padding: 10px 10px;
+}
+
+
+.wpcf7-submit{
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: $elementsColor;
+    border: none;
+    border-radius: 20px;
+    &:hover{
+
+        cursor: pointer;
+    }
+}
+
+.has-spinner {
+    width: 200px;
+    border-radius: 20px;
+    color: white;
+    height: 42px;
+   }
+
+
