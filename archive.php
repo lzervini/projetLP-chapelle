@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php the_content('');?>
+
 <?php
 	   $args = array(
 		   'post_type' => 'actualites',
@@ -31,28 +31,5 @@
 			  </div>
 			</div>
 		</section>
-		 <section class="bgColor">
-			<div class="marginWidth">
-				<h2>Nos services</h2>
-				<?php 
-			   if( have_rows( 'services' ) ): ?>
-				<div class="services ">
-				 		<?php while(have_rows('services')): the_row(); ?>
-					<a href="<?php echo $lien_services?>">
-				   <?php $img_services = get_sub_field('img_services');
-				   $text_services = get_sub_field('text_services');
-				   $lien_services = get_sub_field('lien_services');?>
-				   <div class="cardService">
-						 <img src="<?php echo $img_services['url']; ?>"></img>  
-					   <p> <?php echo $text_services; ?></p>
-				</div>
-			   </a>
-				   
-				   <?php	endwhile;
-		   endif;
-		   ?>
-		   </div>
-			</div>
-		 </section>
 
 <?php get_footer(); ?>
