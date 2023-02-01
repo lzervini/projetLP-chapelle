@@ -54,5 +54,18 @@
 		   </div>
 			</div>
 		 </section>
+		   <section>
+			<div id="mapid"></div>
+		   </section>
+		   <script type="text/javascript">
+  var map = L.map('mapid').setView([47.7055, 6.8202], 16);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
 
-<?php get_footer(); ?>
+  
+</script>
+
+
+ <?php get_footer(); ?>
+

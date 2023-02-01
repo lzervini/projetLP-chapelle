@@ -7,6 +7,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
         <?php wp_head(); ?>
 	</head>
     <body <?php body_class(); ?>>

@@ -21,6 +21,4 @@
 		}
 		return $first_img;
 		}
-		?>
-
 		
