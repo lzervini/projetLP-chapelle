@@ -1,0 +1,36 @@
+.servicesInstitutions >div{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.containerAdmin{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.servicesInstitutions{
+    width: 45%;
+    background-color: $backgroundColor;
+    position: relative;
+    height: 300px;
+    h4{
+        text-align: center;
+        background-color: $mainColor;
+        margin: 0;
+        padding: 10px;
+    }
+    .textAdmin{
+        padding: 0 20px;
+    }
+    .siteAdmin{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 10px auto;
+    }
+}
+
