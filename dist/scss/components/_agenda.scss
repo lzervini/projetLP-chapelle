@@ -1,8 +1,8 @@
 
 
 div.tribe-common-g-row {
-    border: 2px solid $mainColor;
-    padding: 10px;
+  border: 2px solid $mainColor;
+    padding: 0!important;
   }
   
   div.tribe-common-g-row > div > time:nth-child(1) > span:nth-child(1) {
@@ -17,4 +17,36 @@ div.tribe-common-g-row {
   div.tribe-common-g-row > div > time:nth-child(1) > span:nth-child(3) {
     font-size: 25px;
   }
-  
+
+  .tribe-common--breakpoint-medium.tribe-common .tribe-common-g-row--gutters>.tribe-common-g-col{
+    padding: 0!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-latest-past__event-row>.tribe-common-g-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .tribe-events-calendar-latest-past__event-date-tag tribe-common-g-col{
+    border-right: 1px solid $elementsColor;
+  }
+
+  .tribe-events-calendar-latest-past__event-details.tribe-common-g-col{
+    padding-left: 50px!important;
+  }
+   
+  .tribe-events-calendar-latest-past__event-wrapper.tribe-common-g-col{
+    border-left: 1px solid red;
+  }
+
+  .tribe-events-calendar-latest-past__event-description.tribe-common-b2.tribe-common-a11y-hidden>p{
+    padding: 0 40px!important;
+  }
