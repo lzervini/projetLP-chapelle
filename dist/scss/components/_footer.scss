@@ -1,0 +1,27 @@
+#menu-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.footer{
+    background-color: $mainColor;
+    padding-bottom: 10px;
+    a{
+        color: $textColor;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+ul#menu-footer.footer-list{
+    margin: 0;
+    padding: 0;
+}
+
+.copy>p{
+    margin:0 ;
+    text-align: center;
+}
