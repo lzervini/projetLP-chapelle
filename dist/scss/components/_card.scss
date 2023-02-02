@@ -7,9 +7,9 @@
 
 .card {
     border: 2px solid $mainColor;
+    background-color: #E6EBE026;
     width: 30%;
     margin: 10px;
-    border-radius: 12px;
     overflow: hidden;
     text-align: center;
     position: relative;
@@ -20,7 +20,7 @@
   
   .card-image {
     width: 100%;
-    height: 200px;
+    height: 50%;
     object-fit: cover;
   }
 
@@ -44,7 +44,7 @@
    margin: 12px auto;
    border: 1px solid $elementsColor;
     width: 45%;
-    padding: 5px 2px;
+    padding: 10px 3px;
     border-radius: 100px;
     background: $elementsColor;
     color: white;
