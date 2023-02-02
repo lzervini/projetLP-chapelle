@@ -22,3 +22,5 @@
 		return $first_img;
 		}
 		
+//permet de cacher les erreurs de connexion :  n'affice pas si le mdp ou user est incorrect
+add_filter('login_errors',create_function('$a', "return null;"));
