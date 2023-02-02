@@ -3,7 +3,7 @@
 <?php
 	   $args = array(
 		   'post_type' => 'actualites',
-		   'posts_per_page' => 3,
+		   'posts_per_page' => '',
 		);
 		?>
 		<section>
